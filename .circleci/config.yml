@@ -13,7 +13,6 @@ jobs:
           command: |
             ./gradlew assembleDebug
             ./gradlew assembleAndroidTest
-
       - run:
           name: Store Google Service Account
           command: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
@@ -35,7 +34,7 @@ jobs:
       - run:
           name: Record to screenshotbot
           command: |
-            curl https://staging.screenshotbot.io/recorder.sh | sh
+            curl https://screenshotbot.io/recorder.sh | sh
             ~/screenshotbot/recorder \
               --channel shot-example-circleci-test \
               --firebase-output ~/firebase-output \
