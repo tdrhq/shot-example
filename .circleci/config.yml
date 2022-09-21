@@ -11,7 +11,7 @@ jobs:
       - run:
           name: Build debug APK and release APK
           command: |
-            ./gradlew assemble
+            ./gradlew assembleDebug
             ./gradlew assembleAndroidTest
       - run:
           name: Store Google Service Account
