@@ -11,7 +11,7 @@ jobs:
       - run:
           name: Build debug APK and release APK
           command: |
-            ./gradlew assemble
+            ./gradlew assembleDebug
             ./gradlew assembleAndroidTest
       - run:
           name: Store Google Service Account
@@ -25,8 +25,8 @@ jobs:
           name: Test with Firebase Test Lab
           command: >
             cd ~/project && gcloud firebase test android run \
-              --app ./build/outputs/apk/debug/project-debug.apk \
-              --test ./build/outputs/apk/androidTest/debug/project-debug-androidTest.apk \
+              --app .app/build/outputs/apk/staging/debug/app-staging-debug.apk \
+              --test .app/build/outputs/apk/androidTest/staging/debug/app-staging-debug-androidTest.apk \
               --results-bucket cloud-test-${GOOGLE_PROJECT_ID} \
               --directories-to-pull /sdcard/screenshots/com.facebook.testing.screenshot.example.test \
               --device-ids Pixel2 \
