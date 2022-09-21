@@ -28,7 +28,7 @@ jobs:
               --app ./app/build/outputs/apk/staging/debug/app-staging-debug.apk \
               --test ./app/build/outputs/apk/androidTest/staging/debug/app-staging-debug-androidTest.apk \
               --results-bucket cloud-test-${GOOGLE_PROJECT_ID} \
-              --directories-to-pull /storage/emulated/0/Download/ \
+              --directories-to-pull /sdcard/Downloads \
               --device-ids Pixel2 \
               --os-version-ids 27 2>&1 | tee ~/firebase-output
       - run:
