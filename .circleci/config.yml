@@ -13,6 +13,7 @@ jobs:
           command: |
             ./gradlew assembleDebug
             ./gradlew assembleAndroidTest
+
       - run:
           name: Store Google Service Account
           command: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
