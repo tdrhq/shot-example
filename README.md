@@ -8,7 +8,7 @@ In addition, we also use Firebase to run the Shot tests. This is
 configured to run in CircleCI, but you may use any other CI framework
 with minor modification to the steps.
 
-See `.circleci/config.yml` to see the steps required for
+See [.circleci/config.yml](.circleci/config.yml) to see the steps required for
 configuration.
 
 To translate this to a different CI you need to do a few steps
