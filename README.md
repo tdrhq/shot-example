@@ -41,3 +41,10 @@ repository.)
 You can see an example run here: https://screenshotbot.io/runs/632b758108394e6f1ee49ff5
 
 You can see a test Pull Request here: https://github.com/tdrhq/shot-example/pull/1
+
+The pull request created a public report. You can either click the
+link to that report from the build status on Pull Request, of click
+this direct link: https://screenshotbot.io/report/632ccfc208394e6f1ee4ad2b
+
+(If it's been a while since we've modified this README file, let us
+know if any of the above links are broken at support@screenshotbot.io)
