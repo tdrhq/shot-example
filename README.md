@@ -1,7 +1,7 @@
 # Screenshotbot integration with pedrovgs/Shot
 
 This example repository demonstrates using [Screenshotbot](https://screenshotbot.io) with the
-excellent Shot library. It's based of the examples in the Shot
+excellent [Shot](https://github.com/pedrovgs/Shot) library. It's based of the examples in the Shot
 repository.
 
 In addition, we also use Firebase to run the Shot tests. This is
