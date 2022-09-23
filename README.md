@@ -1,6 +1,6 @@
 # Screenshotbot integration with pedrovgs/Shot
 
-This example repository demonstrates using Screenshotbot with the
+This example repository demonstrates using [Screenshotbot](https://screenshotbot.io) with the
 excellent Shot library. It's based of the examples in the Shot
 repository.
 
