@@ -1,5 +1,7 @@
 # Screenshotbot integration with pedrovgs/Shot
 
+[![Screenshots](https://screenshotbot.io/badge?org=5fe2d92a7ceb64d41853c231&channel=shot-example-circleci-test&branch=main)](https://screenshotbot.io/active-run?org=5fe2d92a7ceb64d41853c231&channel=shot-example-circleci-test&branch=main)
+
 This example repository demonstrates using [Screenshotbot](https://screenshotbot.io) with the
 excellent [Shot](https://github.com/pedrovgs/Shot) library. It's based of the examples in the Shot
 repository.
