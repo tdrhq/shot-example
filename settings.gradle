@@ -1,2 +1,13 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenLocal()
+        gradlePluginPortal()
+        maven {
+            url "/home/arnold/myLocal"
+        }
+    }
+}
+
 rootProject.name = "shot-consumer-compose"
 include ':app'
