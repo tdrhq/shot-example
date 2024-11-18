@@ -1,14 +1,16 @@
 # Screenshotbot integration with pedrovgs/Shot
 
-This example repository demonstrates using Screenshotbot with the
-excellent Shot library. It's based of the examples in the Shot
+[![Screenshots](https://screenshotbot.io/badge?org=5fe2d92a7ceb64d41853c231&channel=shot-example-circleci-test&branch=main)](https://screenshotbot.io/active-run?org=5fe2d92a7ceb64d41853c231&channel=shot-example-circleci-test&branch=main)
+
+This example repository demonstrates using [Screenshotbot](https://screenshotbot.io) with the
+excellent [Shot](https://github.com/pedrovgs/Shot) library. It's based of the examples in the Shot
 repository.
 
 In addition, we also use Firebase to run the Shot tests. This is
 configured to run in CircleCI, but you may use any other CI framework
 with minor modification to the steps.
 
-See `.circleci/config.yml` to see the steps required for
+See [.circleci/config.yml](.circleci/config.yml) to see the steps required for
 configuration.
 
 To translate this to a different CI you need to do a few steps
@@ -41,3 +43,10 @@ repository.)
 You can see an example run here: https://screenshotbot.io/runs/632b758108394e6f1ee49ff5
 
 You can see a test Pull Request here: https://github.com/tdrhq/shot-example/pull/1
+
+The pull request created a public report. You can either click the
+link to that report from the build status on Pull Request, of click
+this direct link: https://screenshotbot.io/report/632ccfc208394e6f1ee4ad2b
+
+(If it's been a while since we've modified this README file, let us
+know if any of the above links are broken at support@screenshotbot.io)
