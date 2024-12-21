@@ -5,6 +5,7 @@ plugins {
 apply plugin: "shot"
 
 android {
+    namespace "com.karumi.shotconsumercompose"
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
@@ -44,7 +45,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
-        useIR = true
+        //useIR = true
     }
     buildFeatures {
         compose true
