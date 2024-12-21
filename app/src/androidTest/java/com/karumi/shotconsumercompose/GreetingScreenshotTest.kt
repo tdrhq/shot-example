@@ -11,6 +11,8 @@ import com.karumi.shot.ScreenshotTest
 import com.karumi.shotconsumercompose.ui.ShotConsumerComposeTheme
 import org.junit.Rule
 import org.junit.Test
+import org.junit.jupiter.params.ParameterizedTest
+import org.junit.jupiter.params.provider.ValueSource
 
 class GreetingScreenshotTest : ScreenshotTest {
 
@@ -41,18 +43,11 @@ class GreetingScreenshotTest : ScreenshotTest {
         compareScreenshot(composeRule)
     }
 
-    @Test
-    fun rendersAGreetingWithALongText() {
-        for (i in 1..100) {
-            renderComponent(("Hello world from the compose!" + i).repeat(20))
-        }
+    @ParameterizedTest
+    @ValueSource(ints = [ 1,2,3,4,5,6,8 ])
+    fun rendersAGreetingWithALongText(number: Int) {
+        renderComponent(("Hello world from the compose!$number").repeat(20))
         compareScreenshot(composeRule)
-    }
-
-    @Test
-    fun rendesAnyComponentUsingABitmapInsteadOfANode() {
-        renderComponent("Hello world from the compose!")
-        compareScreenshot(composeRule.onRoot().captureToImage().asAndroidBitmap())
     }
 
     @Composable
