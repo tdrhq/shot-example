@@ -43,7 +43,9 @@ class GreetingScreenshotTest : ScreenshotTest {
 
     @Test
     fun rendersAGreetingWithALongText() {
-        renderComponent("Hello world from the compose!".repeat(20))
+        for (int i in 1..100) {
+            renderComponent("Hello world from the compose!".repeat(20))
+        }
         compareScreenshot(composeRule)
     }
 
