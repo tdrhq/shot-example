@@ -22,6 +22,7 @@ jobs:
             gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
             gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
       - run:
+          no_output_timeout: 30m
           name: Test with Firebase Test Lab
           command: >
             cd ~/project && gcloud firebase test android run \
