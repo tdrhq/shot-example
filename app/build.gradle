@@ -6,13 +6,13 @@ apply plugin: "shot"
 
 android {
     namespace "com.karumi.shotconsumercompose"
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion 34
+    buildToolsVersion "33.0.2"
 
     defaultConfig {
         applicationId "com.karumi.shotconsumercompose"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
 
@@ -51,7 +51,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion compose_version
+        kotlinCompilerExtensionVersion "1.5.15"
         kotlinCompilerVersion kotlin_version
     }
     packagingOptions {
